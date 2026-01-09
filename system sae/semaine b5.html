@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaine B5 - SAÉ S1.03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* STYLE SIMPLE (Identique à Semaine B3) */
+        body { background-color: #f8f9fa; }
+
+        /* En-tête bleu simple */
+        .header-blue {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Boîtes blanches */
+        .content-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* Footer noir en bas */
+        footer {
+            background-color: #212529;
+            color: #adb5bd;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        /* Liste à puces */
+        ul li { margin-bottom: 8px; }
+
+        /* Style pour mettre en évidence les mots importants */
+        strong { color: #0d6efd; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="accueil.html">🚀 SAÉ S1.03</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-link" href="accueil.html">Accueil</a>
+                <a class="nav-link" href="questions.html">Questions</a>
+                <a class="nav-link" href="semaine b3.html">Semaine B3</a>
+                <a class="nav-link" href="semaine b4.html">Semaine B4</a>
+                <a class="nav-link active" href="semaine b5.html">Semaine B5</a>
+                <a class="nav-link" href="semaine b6.html">Semaine B6</a>
+                <a class="nav-link" href="conclusion.html">Conclusion</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="header-blue">
+    <div class="container">
+        <h2>Rapport Semaine S1-B5</h2>
+        <p>Début du Développement Web</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="content-box">
+        <h3 class="text-primary">4.1. Objectifs de la période</h3>
+        <p>L'objectif principal de cette semaine était de passer d'un simple serveur Apache fonctionnel (installé en semaine B4) à un véritable site web structuré et ergonomique.</p>
+        <p>Nous devions organiser nos fichiers pour séparer le code (HTML) des médias (Images) et mettre en place une navigation fluide entre les différentes pages du rapport.</p>
+    </div>
+
+    <div class="content-box">
+        <h3 class="text-primary">4.2. Choix techniques</h3>
+        <p>Nous avons fait les choix suivants pour garantir un rendu propre :</p>
+        <ul>
+            <li><strong>Bootstrap 5 :</strong> Utilisation du framework pour le responsive design (adaptation mobile) et la mise en page.</li>
+            <li><strong>Structure :</strong> Séparation claire : les fichiers <code>.html</code> à la racine et les images dans le dossier <code>/img</code>.</li>
+            <li><strong>Nommage :</strong> Gestion des noms de fichiers pour éviter les erreurs d'URL.</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0">© 2026 - Farid & Alex - IUT de Paris</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

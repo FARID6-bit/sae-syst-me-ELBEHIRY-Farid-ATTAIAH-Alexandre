@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - SAÉ S1.03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+            color: #334155;
+        }
+
+        /* Navbar moderne */
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(33, 37, 41, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        .nav-link:hover { color: #0d6efd !important; }
+
+        /* Header avec dégradé */
+        .header-blue {
+            background: linear-gradient(135deg, #0062ff 0%, #003db3 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: -50px; /* Chevauchement avec les cartes */
+        }
+
+        /* Cartes améliorées */
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 35px;
+            background: white;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 4px;
+            background-color: #0d6efd;
+            border-radius: 2px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e293b;
+            color: #94a3b8;
+            padding: 40px 0;
+            margin-top: 80px;
+        }
+
+        .badge-linux {
+            background-color: #f8f9fa;
+            color: #4155ff;
+            border: 1px solid #e2e8f0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="accueil.html">🚀 SAÉ S1.03</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="accueil.html">Accueil</a>
+                <a class="nav-link" href="questions.html">Questions</a>
+                <a class="nav-link" href="semaine b3.html">Semaine B3</a>
+                <a class="nav-link" href="semaine b4.html">Semaine B4</a>
+                <a class="nav-link" href="semaine b5.html">Semaine B5</a>
+                <a class="nav-link" href="semaine b6.html">Semaine B6</a>
+                <a class="nav-link" href="conclusion.html">Conclusion</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="header-blue">
+    <div class="container">
+        <span class="badge bg-light text-primary mb-3 fw-bold px-3 py-2 text-uppercase">Rapport de Projet</span>
+        <h1 class="display-4 fw-800">SAE S1.03 : Virtualisation</h1>
+        <p class="lead opacity-75">Installation et Configuration d'un Poste de Travail Linux</p>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row g-4 justify-content-center">
+        <div class="col-lg-8">
+            <div class="card-custom">
+                <h3 class="section-title text-dark">1. Introduction</h3>
+                <p class="fs-5">Nous devions comprendre le fonctionnement de la virtualisation en créant notre propre environnement de travail Linux complet.</p>
+                <p>Dans le cadre de cette SAÉ, nous avons transformé une machine physique (Mac Apple Silicon) en un hyperviseur performant pour accueillir une machine virtuelle <strong>Ubuntu Server 24.04</strong>.</p>
+
+                <div class="p-3 bg-light rounded-3 border-start border-primary border-4 mt-4">
+                    <p class="mb-0 italic">"Ce rapport retrace nos choix techniques, la gestion des droits utilisateurs et l'administration système. Ce site est fièrement hébergé sur notre propre VM."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card-custom">
+                <h4 class="mb-4 text-dark border-bottom pb-2">Informations</h4>
+                <div class="mb-4">
+                    <span class="text-muted d-block small text-uppercase">Groupe & Classe</span>
+                    <span class="fw-bold">Groupe 2 — Classe 109</span>
+                </div>
+
+                <h5 class="mt-4 mb-3">Étudiants</h5>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">FE</div>
+                    <div><strong>Farid ELBEHIRY</strong></div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="bg-dark text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">AA</div>
+                    <div><strong>Alexandre ATTALAH</strong></div>
+                </div>
+
+                <div class="mt-5 pt-3">
+                    <span class="badge-linux">🐧 Ubuntu Server 24.04</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-1 fw-bold text-white">IUT de Paris - Rives de Seine</p>
+        <p class="small">© 2026 - Réalisé par Farid & Alex dans le cadre de la SAÉ S1.03</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
